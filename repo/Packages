@@ -10,5 +10,5 @@ Section: Themes (GroovyLock)
 Description: A Material Design inspired GroovyLock theme.
 Author: thrifus <admin@thrifus.x10.mx>
 Name: Materio
-Icon: file:///Icons/Materio/Icon.png
-Depiction: http://repo.thrifus.x10.mx/Depictions/Materio.html
+Icon: file:///var/db/stash/_.R4M2PJ/Applications/Cydia.app/Sections/Themes.png
+Depiction: ./Depictions/Materio.html
