@@ -1,159 +1,151 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset='UTF-8'>
+	<meta charset="UTF-8">
 	<title>Materio</title>
-	<meta name='author' content='Patrick Hart'>
-	<meta name='keywords' content='thrifus,thrift,thrifts.thriftus,css,html,javascript,js,jquery,plugins,plugin,extension,extensions,patrick,robert,hart,ifunny,code,codepen,pen,script,scripts'>
-	<link rel='icon' type='image/png' href='http://www.thrifus.x10.mx/images/icon.png' />
-	<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css' />
-	<!-- <link type='text/css' rel='stylesheet' href='http://ionicons.com/css/ionicons.min.css' /> -->
-	<link type='text/css' rel='stylesheet' href='http://vorillaz.github.io/devicons/css/devicons.css' />
-	
-	<meta name='viewport' content='initial-scale=0.7, maximum-scale=0.7, user-scalable=no, width=device-width'>
-	<meta name='apple-mobile-web-app-capable' content='yes'/>
-	<meta name='apple-mobile-web-app-status-bar-style' content='translucent-black'/>
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'/>
+	<meta name="author" content="Patrick Hart">
+	<link rel="icon" type="image/png" href="http://www.thrifus.x10.mx/images/icon.png" />
+        
+	<meta name="viewport" content="initial-scale=0.7, maximum-scale=0.7, user-scalable=no, width=device-width">
 
-<style type='text/css'>
+<style type="text/css">
 @import url(http://thrifus.x10.mx/css/relign.css);
 html {
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  height: 100%;
-  width: 100%;
-  font-family: Avenir, Helvetica;
-  /*background: black;*/
-  /*color: white;*/
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+    font-family: Avenir, Helvetica;
+    background: transparent;
 }
 
 b {
-  /*color: #2196f3;*/
-  color: #f44336;
+    color: #f44336;
 }
 
 .button {
-  font-weight: bold;
-  background: #f44336;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  padding: 15px;
+    font-weight: bold;
+    background: #f44336;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
 }
 
 .middler {
-  display: table;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .middled {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .centaur {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-content: center;
+    -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .big-title {
-  font-size: 2em;
+    font-size: 2em;
+    color: gray;
 }
 
 .description {
-  color: gray;
+    color: black;
 }
 
 .pager {
-  padding: 50px;
+    /*padding: 50px;*/
 }
 
 .unselect {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
 }
 
 .separator {
-	background: #f44336;
-	width: 100%;
-	height: 1px;
+    background: #f44336;
+    width: 100%;
+    height: 1px;
 }
 
 .previous-graphics {
-	display: -ms-flexbox;
-    	display: -webkit-flex;
-    	display: flex;
-    	-webkit-flex-direction: row;
-    		-ms-flex-direction: row;
-    	flex-direction: row;
-    	-webkit-flex-wrap: wrap;
-    		-ms-flex-wrap: wrap;
-    	flex-wrap: wrap;
-    	-webkit-justify-content: center;
-    		-ms-flex-pack: center;
-    			justify-content: center;
-    	-webkit-align-content: center;
-    		-ms-flex-line-pack: center;
-    			align-content: center;
-    	-webkit-align-items: stretch;
-    		-ms-flex-align: stretch;
-    			align-items: stretch;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+        -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
 }
 
 .previous-graphics-mobile {
-	display: -ms-flexbox;
-    	display: -webkit-flex;
-    	display: flex;
-    	-webkit-flex-direction: column;
-    		-ms-flex-direction: column;
-    	flex-direction: column;
-    	-webkit-flex-wrap: wrap;
-    		-ms-flex-wrap: wrap;
-    	flex-wrap: wrap;
-    	-webkit-justify-content: center;
-    		-ms-flex-pack: center;
-    			justify-content: center;
-    	-webkit-align-content: center;
-    		-ms-flex-line-pack: center;
-    			align-content: center;
-    	-webkit-align-items: stretch;
-    		-ms-flex-align: stretch;
-    			align-items: stretch;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+        -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
 }
 
 .previous-graphics:nth-child(1) {
@@ -287,156 +279,170 @@ b {
 }
 
 .img {
-	width: 50%;
+    width: 50%;
 }
 
 .spacer {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .testimonial-container {
-	display: -ms-flexbox;
-    	display: -webkit-flex;
-    	display: flex;
-    	-webkit-flex-direction: column;
-    		-ms-flex-direction: column;
-    			flex-direction: column;
-    	-webkit-flex-wrap: wrap;
-    		-ms-flex-wrap: wrap;
-    			flex-wrap: wrap;
-    	-webkit-justify-content: space-between;
-    		-ms-flex-pack: justify;
-    			justify-content: space-between;
-    	-webkit-align-content: stretch;
-    		-ms-flex-line-pack: stretch;
-    			align-content: stretch;
-    	-webkit-align-items: flex-start;
-    		-ms-flex-align: start;
-    			align-items: flex-start;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+                align-content: stretch;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
 }
 
 .testimonial {
-	border-left: 5px solid lightgray;
-	padding-left: 15px;
-	text-align: left !important;
+    border-left: 5px solid lightgray;
+    padding-left: 15px;
+    text-align: left !important;
 }
 
 .donate-img {
-	width: 60px;
+    width: 60px;
 }
 
 .downloads {
-	color: gray;
+    color: gray;
+}
+
+.ios-container {
+    background: white;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 </style>
 </head>
 
 <body>
-  <!-- <div class='middler'>
-    <div class='middled'> -->
-    	<div class="pager">
-    		<span class="big-title"><strong>Materio</strong></span>
-    		<br />
-    		<br />
-    		<br />
-    		<span class="description">
-    		Materio is a Material Design inspired theme for GroovyLock. Even though it is just a simple clock, it looks absolutely stunning on any device.
-    			<br />
-    		With it's stretching and compressing bars, it will leave you staring at your lockscreen all day.
-    			<br />
-    			<br />
-    		<i>Weather information may be added later, as well as some configurations such as a dark mode for lighter wallpapers.</i>
-    			<br />
-    			<br />
-    		<strong>Instructions for manually enabling the dark mode:</strong>
-    			<br />
-    		Included in this package in the <b>css</b> folder is a stylesheet named <b>style-dark.css</b>. If you would like to apply this, change the line
-    			<br />
-    		<b>&lt;link rel="stylesheet" type="text/css" href="css/style-light.css" /&gt;</b>
-    			<br />
-    		to
-    			<br />
-    		<b>&lt;link rel="stylesheet" type="text/css" href="css/style-dark.css" /&gt;</b> and Materio should now have the dark theme applied.
-    			<br />
-    		If it is not, try disabling and enabling GroovyLock, or respring your device.
-    		</span>
-    		<br />
-    		<br />
-    		<br />
-    		<br />
-    		<div class="separator"></div>
-    		<br />
-    		<br />
-    		<span class="big-title"><strong>Screenshots</strong></span>
-    		<br />
-    		<br />
-    		<br />
-    		<div class="previous-graphics">
-    			<!-- <img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-01.png" width="50%" class="image screenshot1" />
-    			<img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-02.png" width="50%" class="image screenshot2" /> -->
-    			<img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-03.png" width="100%" class="image screenshot2" />
-    		</div>
-    		<br />
-    		<br />
-    		<br />
-    		<div class="separator"></div>
-    		<br />
-    		<br />
-    		<span class="big-title"><strong>Changelog</strong></span>
-    		<br />
-    		<br />
-    		<br />
-    		<div class="testimonial container">
-    			<span class="description">
-    				<strong>v 1.1</strong>
-    				<p> </p>
-    				&nbsp; &middot; Added battery widget
-    				<p> </p>
-    				&nbsp; &middot; Subtle animation changes
-    			</span>
-    		</div>
-    		<br />
-    		<div class="testimonial container">
-    			<span class="description">
-    				<strong>v 1.0</strong>
-    				<p> </p>
-    				&nbsp; &middot; Initial Release
-    			</span>
-    		</div>
-    		<br />
-    		<div class="downloads">
-    		Downloads:
-    		<script type="text/javascript" src="http://modmyi.com/cstats/index.php?package=com.modmyi.materio&output=text"></script>
-    		</div>
-    		<br />
-    		<br />
-    		<br />
-    		<div class="separator"></div>
-    		<p class="spacer">make some space</p>
-    		<br />
-    		<span class="big-title"><strong>Donate</strong></span>
-    		<br />
-    		<br />
-    		<br />
-    		<span class="description">
-    		Donations are always welcome and are put towards any development costs that come up. Also, if you donate, I'll love you forever and ever :)
-    		<br />
-    		<br />
-    		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="http://www.thrifus.x10.mx/Donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" width="150px">
-<!-- <img alt="" src="http://www.thrifus.x10.mx/Donate.png" width="60px" class="donate-img" /> -->
-</form>
-    		</span>
-    	</div>
-    <!-- </div>
-  </div> -->
+    <div class="pager">
+        <span class="big-title"><strong>Materio</strong></span>
+        <br />
+        <div class="ios-container">
+            <span class="description">
+            Materio is a Material Design inspired theme for GroovyLock. Even though it is just a simple clock, it looks absolutely stunning on any device.
+                <br />
+            With it's stretching and compressing bars, it will leave you staring at your lockscreen all day.
+                <br />
+                <br />
+            <i>Weather information may be added later, as well as some configurations such as a dark mode for lighter wallpapers.</i>
+                <br />
+                <br />
+            <strong>Instructions for manually enabling the dark mode:</strong>
+                <br />
+            Included in this package in the <b>css</b> folder is a stylesheet named <b>style-dark.css</b>. If you would like to apply this, change the line
+                <br />
+            <b>&lt;link rel="stylesheet" type="text/css" href="css/style-light.css" /&gt;</b>
+                <br />
+            to
+                <br />
+            <b>&lt;link rel="stylesheet" type="text/css" href="css/style-dark.css" /&gt;</b> and Materio should now have the dark theme applied.
+                <br />
+            If it is not, try disabling and enabling GroovyLock, or respring your device.
+            </span>
+        </div>
+        <!--
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="separator"></div>
+        <br />
+        <br />
+        -->
+        <br />
+        <br />
+        <span class="big-title"><strong>Screenshots</strong></span>
+        <br />
+        <div class="ios-container">
+            <div class="previous-graphics">
+                <img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-03.png" width="100%" class="image screenshot2" />
+            </div>
+        </div>
+        <!--
+        <br />
+        <br />
+        <br />
+        <div class="separator"></div>
+        <br />
+        <br />
+        -->
+        <br />
+        <br />
+        <span class="big-title"><strong>Changelog</strong></span>
+        <br />
+        <div class="ios-container">
+            <div class="testimonial container">
+                <span class="description">
+                    <strong>v 1.1 (1.0.1)</strong>
+                    <p> </p>
+                    &nbsp; &middot; Added battery widget
+                    <p> </p>
+                    &nbsp; &middot; Subtle animation changes
+                </span>
+            </div>
+            <br />
+            <div class="testimonial container">
+                <span class="description">
+                    <strong>v 1.0</strong>
+                    <p> </p>
+                    &nbsp; &middot; Initial Release
+                </span>
+            </div>
+            <br />
+            <div class="downloads">
+            Downloads:
+            <script type="text/javascript" src="http://modmyi.com/cstats/index.php?package=com.modmyi.materio&output=text"></script>
+            </div>
+        </div>
+        <!--
+        <br />
+        <br />
+        <br />
+        <div class="separator"></div>
+        <p class="spacer">make some space</p>
+        <br />
+        -->
+        <br />
+        <br />
+        <span class="big-title"><strong>Donate</strong></span>
+        <br />
+        <div class="ios-container">
+            <span class="description">
+            Donations are always welcome and are put towards any development costs that come up. Also, if you donate, I'll love you forever and ever :)
+            <br />
+            <br />
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+    ">
+    <input type="image" src="http://www.thrifus.x10.mx/Donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" width="150px">
+    <!-- <img alt="" src="http://www.thrifus.x10.mx/Donate.png" width="60px" class="donate-img" /> -->
+    </form>
+            </span>
+    </div>
+    </div>
 
 <script type="text/javascript" src="http://www.thrifus.x10.mx/jquery/jquery.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
-<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js'></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
