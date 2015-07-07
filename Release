@@ -1,0 +1,8 @@
+Origin: thrifus’ Repo
+Label: thrifus’ Repo
+Suite: stable
+Version: 1.0
+Codename: appleCore
+Architectures: iphoneos-arm
+Components: main
+Description: The repository for apps, tweaks, etc. made by thrifus – a part of Extant Studios.

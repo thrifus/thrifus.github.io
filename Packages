@@ -1,0 +1,31 @@
+Package: com.modmyi.materio
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: thrifus <admin@thrifus.x10.mx>
+Depends: com.groovycarrot.groovylock
+Filename: ./debs/com.modmyi.materio_1.1_iphoneos-arm.deb
+Size: 3385664
+MD5sum: f97f37d1b772257fdf6885ca951a2586
+Section: Themes (GroovyLock)
+Description: A Material Design inspired GroovyLock theme.
+Author: thrifus <admin@thrifus.x10.mx>
+Name: Materio
+Icon: file:///Icons/Materio/Icon.png
+Depiction: http://repo.thrifus.x10.mx/Depictions/Materio.html
+
+Package: com.thrifus.Bowee-Beta
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: thrifus <admin@thrifus.x10.mx>
+Depends: firmware (>= 8.0)
+Filename: ./debs/com.thrifus.bowee-beta_1.0_iphoneos-arm.deb
+Size: 13167340
+MD5sum: 5038e44b2d8091c9713c3b9800ea4531
+SHA1: accf7754347a9bf9ac4633cbdcde30bdd1de9aa1
+SHA256: 0037fcb2d71430472dae24e17057ffd2bb1b112298ff80f39dad7960a74f84eb
+Section: Apps
+Description: A sleek browser for iPhone, iPad, and iPod.
+Author: thrifus <admin@thrifus.x10.mx>
+Name: Bowee Beta
+Icon: file:///Icons/Bowee-Beta/Icon.png
+Depiction: http://repo.thrifus.x10.mx/Depictions/Bowee-Beta.html
