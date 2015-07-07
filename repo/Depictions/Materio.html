@@ -8,6 +8,9 @@
         
         <meta name="viewport" content="initial-scale=0.7, maximum-scale=0.7, user-scalable=no, width=device-width">
         
+        <script type="text/javascript" src="http://www.thrifus.x10.mx/jquery/jquery.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
+        
         <script type="text/javascript">
             if (navigator.userAgent.search(/Cydia/) != -1) {
                 document.body.classList.add("cydia");
@@ -43,6 +46,11 @@
 
             b {
                 color: #F44336;
+            }
+            
+            .image {
+                width: 100% !important;
+                height: auto !important;
             }
 
             .button {
@@ -341,12 +349,11 @@
                 background: white;
                 border-top: 2px solid gray;
                 border-bottom: 2px solid gray;
-                width: 100%;
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                box-shadow: 0 10px 3px rgba(0,0,0.48);
+                box-shadow: 0 10px 3px 0 rgba(0,0,0,.48);
             }
         </style>
     </head>
@@ -396,7 +403,7 @@
 
             <div class="ios-container">
                 <div class="previous-graphics">
-                    <img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-03.png" width="100%" class="image screenshot2" />
+                    <img src="http://repo.thrifus.x10.mx/Screenshots/materio-screenshot-03.png" width="100%" height="auto" class="image" />
                 </div>
             </div>
 
@@ -474,19 +481,12 @@
                 </span>
         </div>
         </div>
-        
-        
-        <br />
-        <br />
-        
-
-    <script type="text/javascript" src="http://www.thrifus.x10.mx/jquery/jquery.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
 
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(".image").unveil();
-    });
+        $(document).ready(function() {
+            $(".image").unveil();
+        });
     </script>
+        
     </body>
 </html>
